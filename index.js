@@ -16,7 +16,11 @@ for (let i=0; i<localStorage.length;i++){
 document.getElementById("box").innerHTML = y;
 }
 function del (){
-
-localStorage.removeItem("name")
+var y= localStorage.length; 
+localStorage.removeItem(y-1); 
 document.getElementById("box").innerHTML = ` `;
+}
+function clearr(){
+    localStorage.clear();
+    document.getElementById("box").innerHTML = ` `;
 }
